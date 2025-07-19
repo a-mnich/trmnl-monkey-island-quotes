@@ -1,0 +1,23 @@
+{% assign quotes_array = quotes[trmnl.plugin_settings.custom_fields_values.language] %}
+{% assign random_index = 'now' | date: '%s' | modulo: quotes_array.size %}
+
+{% template session %}
+<div class="layout">
+  <div class="columns">
+    <div class="column">
+      <div class="markdown gap--large">
+        <div class="value{{ size_mod }} text--center">
+          {{ quotes_array[random_index] }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endtemplate %}
+
+{% template title_bar %}
+<div class="title_bar">
+  <span class="title">{{ trmnl.plugin_settings.instance_name }}</span>
+  <span class="instance">{{ instance }}</span>
+</div>
+{% endtemplate %}

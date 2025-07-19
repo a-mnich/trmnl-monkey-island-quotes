@@ -1,0 +1,27 @@
+---
+strategy: static
+no_screen_padding: 'no'
+dark_mode: 'no'
+static_data: '{ "quotes": { "english": ["Demo Quote"], "german":["Demo Zitat"] } }'
+polling_verb: get
+polling_url: ''
+polling_headers: ''
+polling_body: ''
+id: 106632
+custom_fields:
+- keyname: doesnt_matter
+  name: About This Plugin
+  field_type: author_bio
+  description: |
+    Quotes from the game "The Secret of Monkey Island"<br>
+    Version: 1.0.1
+  github_url: https://github.com/a-mnich/trmnl-monkey-island-quotes
+- keyname: language
+  field_type: select
+  options:
+  - German: german
+  - English: english
+  default: english
+  name: Language
+name: Monkey Island Quotes
+refresh_interval: 240
