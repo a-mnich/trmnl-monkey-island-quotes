@@ -14,7 +14,7 @@ custom_fields:
   field_type: author_bio
   description: |
     Quotes from the game "The Secret of Monkey Island"<br>
-    Version: 1.0.1
+    Version: 1.0.2
   github_url: https://github.com/a-mnich/trmnl-monkey-island-quotes
 - keyname: language
   field_type: select

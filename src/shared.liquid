@@ -5,9 +5,11 @@
 <div class="layout">
   <div class="columns">
     <div class="column">
-      <div class="markdown gap--large">
-        <div class="value{{ size_mod }} text--center">
-          {{ quotes_array[random_index] }}
+      <div class="richtext richtext--center">
+        <div class="content content{{size_mod}}" data-content-limiter="true">
+          <div class="text--center">
+            {{ quotes_array[random_index] }}
+          </div>
         </div>
       </div>
     </div>
