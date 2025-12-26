@@ -1,10 +1,10 @@
 ---
-strategy: static
+strategy: polling
 no_screen_padding: 'no'
 dark_mode: 'no'
-static_data: '{ "quotes": { "english": ["Demo Quote"], "german":["Demo Zitat"] } }'
+static_data: ''
 polling_verb: get
-polling_url: ''
+polling_url: https://cdn.jsdelivr.net/gh/a-mnich/trmnl-monkey-island-quotes@main/assets/quotes.json
 polling_headers: ''
 polling_body: ''
 id: 106632
@@ -14,7 +14,7 @@ custom_fields:
   field_type: author_bio
   description: |
     Quotes from the game "The Secret of Monkey Island"<br>
-    Version: 1.0.2
+    Version: 1.1.0
   github_url: https://github.com/a-mnich/trmnl-monkey-island-quotes
 - keyname: language
   field_type: select
