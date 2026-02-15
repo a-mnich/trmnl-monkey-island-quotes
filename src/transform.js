@@ -1,13 +1,12 @@
 function transform(input) {
-  var quotes = {};
-  for (const language in input.quotes) {
-    const options = input.quotes[language];
-    if (Array.isArray(options) && options.length > 0) {
-      const randomIndex = Math.floor(Math.random() * options.length);
-      quotes[language] = [options[randomIndex]];
-    }
-  }
+  let language = input.trmnl.plugin_settings.custom_fields_values.language;
+  // Get quotes for the selected language
+  const quotes = input.quotes[language] || input.quotes['english'];
+  // Select a random quote
+  const randomIndex = Math.floor(Math.random() * quotes.length);
+  const randomQuote = quotes[randomIndex];
+
   return {
-    quotes: quotes
-  };
+    quote: randomQuote
+  }
 }
