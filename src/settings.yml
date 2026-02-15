@@ -1,10 +1,9 @@
 ---
-strategy: static
+strategy: polling
 no_screen_padding: 'no'
 dark_mode: 'no'
-static_data: '{ "quotes": { "english": ["Demo Quote"], "german":["Demo Zitat"] } }'
 polling_verb: get
-polling_url: ''
+polling_url: https://raw.githubusercontent.com/a-mnich/trmnl-monkey-island-quotes/refs/heads/main/assets/quotes.json
 polling_headers: ''
 polling_body: ''
 id: 106632
